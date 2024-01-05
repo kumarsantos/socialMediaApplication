@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+a{
+    color:black !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.active{
+    color:red ;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .brand-logo,h2{
+    font-family: 'Grand Hotel', cursive;
   }
-  to {
-    transform: rotate(360deg);
+
+  .auth-card{
+      padding:20px;
+      text-align: center;
+      max-width: 500px;
+      margin:10px auto;
   }
+  .mycard{
+      margin:30px;
+  }
+
+   input[type=text]:focus {
+    border-bottom: 1px solid rgb(25, 0, 255) !important;
+    box-shadow: 0 1px 0 0 rgb(97, 78, 93) !important;
+    margin: 0px;
+    padding:0px;
+    
+  }
+   input[type=password]:focus {
+    border-bottom: 1px solid rgb(25, 0, 255) !important;
+    box-shadow: 0 1px 0 0 rgb(103, 81, 104) !important;
+  }
+
+  .item{
+      width:30%;
+      margin:10px;
+      
+  }
+  .gallary{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+.home-card{
+      margin:26px  auto;
+      max-width: 750px;
+      height: max-content;
+      /* height: 500px; */
+  }
+  
+  
+  .card-image img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #toast-container{
+    top:80px !important;
+    right:350px !important;
+    left:auto !important;
+  }
+ .navbar{
+   padding:0px 20px;
+ }
+
+
+.profile_card{
+  width:350px;
+  height:max-content;
 }
+.profile_card:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.03);
+}
+
+
+
+.profile_image img{
+  width:100%;
+  height: 200px;
+}
+
+
+
+
+  body{
+    margin:0px;
+    padding:0px;
+    background-color: #020116;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  @media (max-width:420px) {
+    
+    .followbtn{
+      position:relative;
+      left:-320px;
+      top: 25px;
+    }
+
+  }
+  
